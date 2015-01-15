@@ -18,14 +18,16 @@
   </head>
   <body ng-controller="MapCtrl">
 
-    <esri-map id="map" center="-97.73921,30.28565" zoom="14" onclick="click">    
+    <esri-map id="map" center="-97.73921,30.28565" zoom="2" basemap="austinstreet" onclick="click">    
+      <!--
       <esri-tiled-layer url="http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/StreetMap/MapServer" layerid="street" visible="true"></esri-tiled-layer>
+      -->
       <esri-dynamic-layer url="http://coaagssomprd.coacd.org/arcgis/rest/services/CIVIC/Civic/MapServer" layerid="civic" visible="true"></esri-dynamic-layer>
     </esri-map>
 
     <!-- load Angular and the JS API -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.js"></script>
-    <script src="http://js.arcgis.com/3.8/"></script>
+    <script src="http://js.arcgis.com/3.12/"></script>
 
     <!-- load our setup file -->
     <script src="setup.js" type="text/javascript" ></script>

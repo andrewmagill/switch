@@ -1,9 +1,9 @@
 define([
   'app',
   'esri/map',
-  'esri/geometry/Point'
-], function (app, Map, Point) {
-
+  'esri/geometry/Point',
+  "esri/basemaps"
+], function (app, Map, Point, esriBasemaps) {      
   // register a new directive called esriMap with our app
   app.directive('esriMap', function(){
     // this object will tell angular how our directive behaves
@@ -59,7 +59,7 @@ define([
             x: center[0],
             y: center[1],
             spatialReference: {
-              wkid:102100
+              wkid:102739
             }
           });
 
@@ -79,4 +79,41 @@ define([
       }
     };
   });
+  
+  esriBasemaps.austinstreet = {
+    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/StreetMap/MapServer"}
+    ],
+    thumbnailUrl: "https://placekitten.com/g/50/50",
+    title: "Delorme"
+  };
+  
+  esriBasemaps.austingrey = {
+    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/GreyScale/MapServer"}
+    ],
+    thumbnailUrl: "https://placekitten.com/g/50/50",
+    title: "Delorme"
+  };
+  
+  esriBasemaps.austinhybrid = {
+    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/Hybrid/MapServer"}
+    ],
+    thumbnailUrl: "https://placekitten.com/g/50/50",
+    title: "Delorme"
+  };
+  
+  esriBasemaps.austinnatural = {
+    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/NaturalFeatures/MapServer"}
+    ],
+    thumbnailUrl: "https://placekitten.com/g/50/50",
+    title: "Delorme"
+  };
+  
+  esriBasemaps.austinaerial = {
+    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/AerialImagery/MapServer"}
+    ],
+    thumbnailUrl: "https://placekitten.com/g/50/50",
+    title: "Delorme"
+  };
+  
+  
 });
