@@ -1,10 +1,11 @@
 define([
-  'app'
-], function (app) {
+  'app',
+  'esri/basemaps'
+], function (app, esriBasemaps) {
 
   // define our map controller and register it with our app
   app.controller("MapCtrl", function($scope){
-
+    
     // expose a method for handling clicks
     $scope.click = function(e){
       console.log("click handler", e);

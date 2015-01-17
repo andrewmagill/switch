@@ -84,36 +84,34 @@ define([
     baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/StreetMap/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
-    title: "Delorme"
+    title: "Austin Street Map"
   };
   
   esriBasemaps.austingrey = {
     baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/GreyScale/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
-    title: "Delorme"
+    title: "Austin Gray Scale"
   };
   
   esriBasemaps.austinhybrid = {
     baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/Hybrid/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
-    title: "Delorme"
+    title: "Austin Hybrid"
   };
   
   esriBasemaps.austinnatural = {
     baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/NaturalFeatures/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
-    title: "Delorme"
+    title: "Austin Natural Features"
   };
   
   esriBasemaps.austinaerial = {
     baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/AerialImagery/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
-    title: "Delorme"
-  };
-  
-  
+    title: "Austin Aerial Imagery"
+  };    
 });
