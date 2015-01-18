@@ -1,8 +1,8 @@
 define([
   'app'
 ], function (app) {
-  app.controller('DataCtrl', ['$scope', '$rootScope', '$log','dataFactory', 'locatorFactory', 
-        function ($scope, $rootScope, $log, dataFactory, locatorFactory) {
+  app.controller('DataCtrl', ['$scope', '$rootScope', '$log','dataFactory', 
+        function ($scope, $rootScope, $log, dataFactory) {
    
           $scope.status;
           $scope.candidates;
