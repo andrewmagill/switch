@@ -31,11 +31,13 @@
       
       <div ng-controller="GeocodeCtrl">
                 
-        <label>Address Locator</label>
-        <input ng-init="message='10518 North Platt River Dr'" ng-model="message" >
-        <button ng-click="callLocator(message);">SEARCH</button>
-        <p></p>
-
+        <form>
+          <label>Address Locator</label>
+          <input ng-init="message='10518 North Platt River Dr'" ng-model="message" >
+          <button ng-click="callLocator(message);">SEARCH</button>
+        </form>
+        
+          
         <div>
           <ul >
               <li ng-repeat="candidate in candidates" ng-click="selectAddress(candidate);"> {{ candidate.address }} </li>
