@@ -20,7 +20,8 @@ define([
     // listen for the event in the relevant $scope
     $scope.$on('address.select', function (event, data) {
       console.log(data); // 'Data to send'
-      $scope.center = [data.location.x,data.location.y];
+      //$scope.center = [data.location.x,data.location.y];
+      $scope.centerAndZoom([data.location.x,data.location.y],5);
     });
   });
 

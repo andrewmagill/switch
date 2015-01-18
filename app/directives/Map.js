@@ -54,7 +54,7 @@ define([
         };
 
         // lets expose a version of centerAt that takes an array of [lng,lat]
-        this.centerAt = function(center){
+        this.centerAt = function(center) {
           var point = new Point({
             x: center[0],
             y: center[1],
@@ -64,6 +64,18 @@ define([
           });
 
           map.centerAt(point);
+        };
+        
+        $scope.centerAndZoom = function(center, zoom) {
+          var point = new Point({
+            x: center[0],
+            y: center[1],
+            spatialReference: {
+              wkid:102739
+            }
+          });
+
+          map.centerAndZoom(point, zoom);
         };
 
         // listen for click events and expost them as broadcasts on the scope and suing the scopes click handler
