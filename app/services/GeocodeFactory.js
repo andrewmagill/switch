@@ -1,11 +1,11 @@
 define([
   'app'
 ], function (app) {
-  app.factory('dataFactory', ['$http', function($http) {
+  app.factory('geocodeFactory', ['$http', function($http) {
         
-    var dataFactory = {};
+    var geocodeFactory = {};
     
-    dataFactory.getCandidates = function (address) {
+    geocodeFactory.getCandidates = function (address) {
     var url = 'http://www.austintexas.gov/gis/rest/Geocode/COA_Address_Locator/GeocodeServer/findAddressCandidates?'
             + 'Street='+ address +'&'
             + 'outFields=StreetName&'
@@ -17,6 +17,6 @@ define([
       return $http.jsonp(url);
     }
     
-    return dataFactory;
+    return geocodeFactory;
   }]);
 });

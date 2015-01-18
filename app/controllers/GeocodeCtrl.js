@@ -1,14 +1,14 @@
 define([
   'app'
 ], function (app) {
-  app.controller('DataCtrl', ['$scope', '$rootScope', '$log','dataFactory', 
-        function ($scope, $rootScope, $log, dataFactory) {
+  app.controller('GeocodeCtrl', ['$scope', '$rootScope', '$log','geocodeFactory', 
+        function ($scope, $rootScope, $log, geocodeFactory) {
    
           $scope.status;
           $scope.candidates;
           
           $scope.callLocator = function(msg) {
-            dataFactory.getCandidates(msg)
+            geocodeFactory.getCandidates(msg)
               .success(function (cands) {
                 $log.log(cands);
                 $scope.candidates = cands.candidates;
