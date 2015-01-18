@@ -1,0 +1,184 @@
+{
+  "spatialReference": {
+  "wkid": 102739,
+  "latestWkid": 2277
+ },
+ "candidates": [
+  {
+   "address": "10518 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091711.25,
+    "y": 10030463
+   },
+   "score": 100,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10516 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091710,
+    "y": 10030509
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10514 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091708.5,
+    "y": 10030550
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10511 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091852.75,
+    "y": 10030533
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10512 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091706.75,
+    "y": 10030600
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10507 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091852.25,
+    "y": 10030631
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10509 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091854.25,
+    "y": 10030580
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10508 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091713,
+    "y": 10030699
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10510 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091708.75,
+    "y": 10030654
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10504 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091755.5,
+    "y": 10030796
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10503 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091893,
+    "y": 10030730
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10505 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091863.75,
+    "y": 10030681
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10506 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091727.75,
+    "y": 10030753
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10501 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091920.75,
+    "y": 10030775
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10502 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091778.5,
+    "y": 10030828
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  },
+  {
+   "address": "10500 NORTH PLATT RIVER DR",
+   "location": {
+    "x": 3091814.75,
+    "y": 10030864
+   },
+   "score": 67,
+   "attributes": {
+    "StreetName": "NORTH PLATT RIVER"
+   }
+  }
+ ]
+}

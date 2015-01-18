@@ -13,8 +13,14 @@ define([
     };
 
     // listen for click broadcasts
-    $scope.$on("map.click", function(event, e){
+    $scope.$on("map.click", function(event, e) {
       console.log("broadcast", event, e);
+    });
+    
+    // listen for the event in the relevant $scope
+    $scope.$on('address.select', function (event, data) {
+      console.log(data); // 'Data to send'
+      $scope.center = [data.location.x,data.location.y];
     });
   });
 

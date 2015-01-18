@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="favicon.ico">
-    <title ng-bind="storeTitle">TheStore</title>
+    <title ng-bind="storeTitle">Switch</title>
 
     <!-- load bootstrap CSS from cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
@@ -27,19 +27,27 @@
 
   <body>    
 
-    <div class="container">
-    
-      <div id="simple" ng-controller="MyController">
-        <p>Let's try this simple notify service, injected into the controller...</p>
-        <input ng-init="message='test'" ng-model="message" >
-        <button ng-click="callNotify(message);">NOTIFY</button>
-        <p>(you have to click 3 times to see an alert)</p>
+    <div class="container">          
+      
+      <div ng-controller="DataCtrl">
+                
+        <label>Address Locator</label>
+        <input ng-init="message='10518 North Platt River Dr'" ng-model="message" >
+        <button ng-click="callLocator(message);">SEARCH</button>
+        <p></p>
+
+        <div>
+          <ul >
+              <li ng-repeat="candidate in candidates" ng-click="selectAddress(candidate);"> {{ candidate.address }} </li>
+          </ul>
+        </div>
+        
       </div>
       
       <div  ng-controller="MapCtrl">
-        
+                                    
         <esri-map id="map" center="-97.73921,30.28565" zoom="2" basemap="austinstreet" onclick="click">    
-          <esri-dynamic-layer url="http://coaagssomprd.coacd.org/arcgis/rest/services/CIVIC/Civic/MapServer" layerid="civic" visible="true"></esri-dynamic-layer>
+          <esri-dynamic-layer url="http://www.austintexas.gov/gis/rest/CIVIC/Civic/MapServer" layerid="civic" visible="true"></esri-dynamic-layer>
         </esri-map>
         
       </div>

@@ -81,35 +81,35 @@ define([
   });
   
   esriBasemaps.austinstreet = {
-    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/StreetMap/MapServer"}
+    baseMapLayers: [{url: "http://www.austintexas.gov/gis/rest/MapTiled/StreetMap/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
     title: "Austin Street Map"
   };
   
   esriBasemaps.austingrey = {
-    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/GreyScale/MapServer"}
+    baseMapLayers: [{url: "http://www.austintexas.gov/gis/rest/MapTiled/GreyScale/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
     title: "Austin Gray Scale"
   };
   
   esriBasemaps.austinhybrid = {
-    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/Hybrid/MapServer"}
+    baseMapLayers: [{url: "http://www.austintexas.gov/gis/rest/MapTiled/Hybrid/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
     title: "Austin Hybrid"
   };
   
   esriBasemaps.austinnatural = {
-    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/NaturalFeatures/MapServer"}
+    baseMapLayers: [{url: "http://www.austintexas.gov/gis/rest/MapTiled/NaturalFeatures/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
     title: "Austin Natural Features"
   };
   
   esriBasemaps.austinaerial = {
-    baseMapLayers: [{url: "http://coaagssomprd.coacd.org/arcgis/rest/services/MapTiled/AerialImagery/MapServer"}
+    baseMapLayers: [{url: "http://www.austintexas.gov/gis/rest/MapTiled/AerialImagery/MapServer"}
     ],
     thumbnailUrl: "https://placekitten.com/g/50/50",
     title: "Austin Aerial Imagery"
