@@ -47,6 +47,9 @@ define([
         // declare our map
         var map = new Map($attrs.id, mapOptions);
 
+        //enable pab
+        map.enablePan();
+
         // start exposing an API by setting properties on "this" which is our controller
         // lets expose the "addLayer" method so child directives can add themselves to the map
         this.addLayer = function(layer){
@@ -76,6 +79,19 @@ define([
           });
 
           map.centerAndZoom(point, zoom);
+        };
+
+        $scope.isPan = map.isPan;
+
+        $scope.toggleMapLock = function() {
+          if (map.isPan) {
+            map.disablePan();
+            $scope.isPan = map.isPan;
+          }            
+          else {
+            map.enablePan();
+            $scope.isPan = map.isPan;
+          }            
         };
 
         // listen for click events and expost them as broadcasts on the scope and suing the scopes click handler

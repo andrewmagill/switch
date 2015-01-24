@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="favicon.ico">
-    <title ng-bind="storeTitle">Switch</title>
+    <title>Switch</title>
 
     <!-- load bootstrap CSS from cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
@@ -30,28 +30,47 @@
     <div class="container">          
       
       <div ng-controller="GeocodeCtrl">
-                
-        <form>
-          <label>Address Locator</label>
-          <input ng-init="message='10518 North Platt River Dr'" ng-model="message" >
-          <button ng-click="callLocator(message);">SEARCH</button>
-        </form>
-        
-          
-        <div>
-          <ul >
-              <li ng-repeat="candidate in candidates" ng-click="selectAddress(candidate);"> {{ candidate.address }} </li>
+
+        <div class="row">
+          <form>
+            <label>Address Locator</label>
+            <input ng-init="message='10518 North Platt River Dr'" ng-model="message" >
+            <button ng-click="callLocator(message);">SEARCH</button>
+          </form>
+        </div>
+
+        <div class="row">
+          <ul class="list-unstyled">
+            <li class="" ng-repeat="candidate in candidates">
+              <span ng-bind="candidate.address" ng-click="selectAddress(candidate);"></span> 
+            </li>
           </ul>
         </div>
-        
+
       </div>
       
       <div  ng-controller="MapCtrl">
-                                    
-        <esri-map id="map" center="-97.73921,30.28565" zoom="2" basemap="austinstreet" onclick="click">    
-          <esri-dynamic-layer url="http://www.austintexas.gov/gis/rest/CIVIC/Civic/MapServer" layerid="civic" visible="true"></esri-dynamic-layer>
-        </esri-map>
-        
+
+        <p>
+          <button type="button" class="btn btn-default btn-sm" ng-click="toggleMapLock();">
+            <span ng-Show="isPan">Lock Map</span>
+            <span ng-Show="!isPan">Unlock Map</span>
+          </button>
+        </p>
+
+        <div class="row" >
+          <esri-map id="map" center="-97.73921,30.28565" zoom="2" basemap="austinstreet" onclick="click">    
+            <esri-dynamic-layer url="http://www.austintexas.gov/gis/rest/CIVIC/Civic/MapServer" layerid="civic" visible="true"></esri-dynamic-layer>
+          </esri-map>
+        </div>               
+
+        <p>
+          <button type="button" class="btn btn-default btn-sm" ng-click="toggleMapLock();">
+            <span ng-Show="isPan">Lock Map</span>
+            <span ng-Show="!isPan">Unlock Map</span>
+          </button>
+        </p>
+                
       </div>
 
     </div>
